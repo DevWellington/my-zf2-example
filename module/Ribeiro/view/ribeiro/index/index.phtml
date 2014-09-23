@@ -11,5 +11,6 @@
 <ul>
     <?php foreach($this->rss['items'] as $fields): ?>
         <li><?=$fields['title']; ?></li>
+        <p><?=$fields['description']; ?></p>
     <?php endforeach; ?>
 </ul>
