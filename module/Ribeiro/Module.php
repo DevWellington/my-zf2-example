@@ -12,6 +12,10 @@ class Module
     public function getServiceConfig()
     {
         return [
+            /*'services' => [
+                // Alto Acoplamento (new)
+                'Ribeiro\Services\FeedService' => new \Ribeiro\Services\FeedService()
+            ],*/
             'invokables' => [
                 'Ribeiro\Services\FeedService' => 'Ribeiro\Services\FeedService'
             ]
