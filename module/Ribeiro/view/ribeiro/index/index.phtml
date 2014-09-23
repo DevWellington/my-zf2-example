@@ -7,3 +7,9 @@
     <li><?=$nome?></li>
 <?php endforeach; ?>
 </ul>
+
+<ul>
+    <?php foreach($this->rss['items'] as $fields): ?>
+        <li><?=$fields['title']; ?></li>
+    <?php endforeach; ?>
+</ul>

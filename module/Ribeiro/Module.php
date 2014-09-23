@@ -9,6 +9,15 @@ class Module
         return include __DIR__ . '/config/module.config.php';
     }
 
+    public function getServiceConfig()
+    {
+        return [
+            'invokables' => [
+                'Ribeiro\Services\FeedService' => 'Ribeiro\Services\FeedService'
+            ]
+        ];
+    }
+
     public function getAutoloaderConfig()
     {
         return [
