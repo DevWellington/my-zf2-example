@@ -13,11 +13,8 @@ class IndexController extends AbstractActionController
         $feedService = $this->getServiceLocator()->get('Ribeiro\Services\FeedService');
         $rss = $feedService->getData();
 
-
 		return new ViewModel(
             [
-                'nome' => 'Wellington Ribeiro',
-                'nomes' => ['Wellington', 'Ribeiro', 'Flávia', 'Rocha'],
                 'rss' => $rss
             ]
         );
